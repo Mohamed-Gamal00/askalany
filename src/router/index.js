@@ -8,7 +8,6 @@ import ServicesView from "../views/ServicesView.vue";
 import ErrorView from "../views/ErrorView.vue";
 import ServerError from "../views/ServerError.vue";
 import OrderNow from "../components/products/OrderNow.vue";
-import AppsView from "../views/AppsView";
 const routes = [
   {
     path: "/",
@@ -38,11 +37,6 @@ const routes = [
     path: "/ourworks",
     name: "ourwork",
     component: OurAppsView,
-  },
-  {
-    path: "/Apps",
-    name: "apps",
-    component: AppsView,
   },
   {
     path: "/products",
