@@ -46,7 +46,7 @@
         </div>
       </div>
     </div>
-    <!-- counter -->
+    <!-- section 2 -->
     <div
       data-aos="fade-up"
       data-aos-easing="ease-out-cubic"
@@ -81,8 +81,9 @@
                   مركز العسقلاني لطب الأسنان
                 </p>
                 <p class="pb-3 font_p_home" style="color: #1f1e1e">
-                  احصل علي ابستامه مشرقة وصحية بمركز العسقلاني لطب الاسنان,
-                  معالجة الأسنان ب احدث التقنيات, تخلص من مشاكل الاسنان.
+                  فريق كامل من أفضل الأطباء وفي كل المجالات التي تخدم مجال طب
+                  جراحة الفم والأسنان, متخصصون في زراعة الأسنان, التقويم, تجميل
+                  الأسنان.
                 </p>
                 <a
                   href="#contact_us"
@@ -167,210 +168,155 @@
   </div>
 
   <!-- تواصل معنا -->
-  <div class="container-fluid mt-5" style="background-color: #f8faff">
-    <!-- text -->
-    <div class="container">
-      <div class="row d-flex justify-content-center">
-        <div class="col-md-10">
-          <h1
-            class="text-end fw-bold background"
-            data-aos="fade-up"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="600"
-            data-aos-once="false"
-          >
-            <strong>تواصل معنا</strong>
-          </h1>
-          <p
-            class="fw-bold lh-lg"
-            data-aos="zoom-in"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="600"
-            data-aos-delay="100"
-            data-aos-once="false"
-          >
-            نسعد بتواصلكم معنا دائمًا، ونحرص على تقديم إجابات سريعة لكل
-            الاستفسارات والتساؤلات الهامة.
-          </p>
-        </div>
-      </div>
-    </div>
-    <!-- تواصل معنا -->
-    <div class="row d-flex justify-content-center" id="contact_us">
-      <div class="col-md-10">
-        <div class="row">
-          <section class="mt-5">
-            <div class="container h-100">
-              <div
-                class="row d-flex justify-content-center align-items-center h-50"
-              >
-                <div class="col-lg-12 col-xl-11">
-                  <div class="card text-black border-0">
+  <div class="container-fluid mt-5" style="background-color: #0d4da2">
+    <div class="row d-flex justify-content-center">
+      <div class="col-md-11">
+        <section class="mt-5 mb-5">
+          <div class="row d-flex justify-content-center">
+            <div
+              class="row d-flex justify-content-lg-between align-items-center h-50"
+            >
+              <div class="card text-black border-0 bg-transparent">
+                <div class="text-end">
+                  <p class="text-orange fs-20 fw-bold">تواصل الينا</p>
+                  <p class="fs-30">
+                    انضم لفريق عمل مركز العسقلاني لطب الفم والأسنان
+                  </p>
+                </div>
+                <div class="card-body p-0" style="direction: rtl">
+                  <div class="row justify-content-between">
                     <div
-                      class="card-body p-0"
-                      style="direction: ltr; background-color: #f8faff"
+                      class="col-md-10 col-lg-6 col-xl-6 d-flex align-items-center order-1 order-lg-2"
                     >
-                      <div class="row justify-content-center">
-                        <div
-                          class="col-md-10 col-lg-6 col-xl-6 order-2 order-lg-1"
-                        >
-                          <form class="mx-1 mx-md-4" style="direction: rtl">
-                            <div class="row">
-                              <div class="col-md-6">
-                                <!--  الاسم -->
-                                <div
-                                  class="d-flex flex-row align-items-center mb-4"
-                                >
-                                  <div class="form-outline flex-fill mb-0">
-                                    <label
-                                      class="form-label"
-                                      for="form3Example1c"
-                                      >الاسم</label
-                                    >
-                                    <input
-                                      type="text"
-                                      id="form3Example1c"
-                                      class="form-control border-top-0 border-start-0 border-end-0"
-                                      v-model="contact.name"
-                                    />
-                                    <span
-                                      class="erroe-feedbak"
-                                      v-if="v$.contact.name.$error"
-                                      >{{
-                                        v$.contact.name.$errors[0].$message
-                                      }}</span
-                                    >
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="col-md-6">
-                                <!-- رقم الهاتف -->
-                                <div
-                                  class="d-flex flex-row align-items-center mb-4"
-                                >
-                                  <div class="form-outline flex-fill mb-0">
-                                    <label
-                                      class="form-label"
-                                      for="form3Example3c"
-                                      >رقم الهاتف</label
-                                    >
-                                    <input
-                                      type="number"
-                                      id="form3Example3c"
-                                      class="form-control border-top-0 border-start-0 border-end-0"
-                                      v-model="contact.number"
-                                    />
-                                    <span
-                                      class="erroe-feedbak"
-                                      v-if="v$.contact.number.$error"
-                                      >{{
-                                        v$.contact.number.$errors[0].$message
-                                      }}</span
-                                    >
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <!-- البريد الالكتروني -->
-                            <div
-                              class="d-flex flex-row align-items-center mb-4"
-                            >
+                      <img
+                        src="@/assets/askalany/picture.webp"
+                        class="img-fluid"
+                        height="400"
+                        alt="Sample"
+                      />
+                    </div>
+                    <div class="col-md-10 col-lg-4 col-xl-4 order-2 order-lg-1">
+                      <form
+                        class="mx-1 mx-md-4 input-icons"
+                        style="direction: rtl"
+                      >
+                        <div class="row">
+                          <div class="col-md-12">
+                            <!--  الاسم الاول -->
+                            <div class="d-flex flex-row align-items-center">
                               <div class="form-outline flex-fill mb-0">
-                                <label class="form-label" for="form3Example4c"
-                                  >البريد الالكتروني</label
-                                >
-                                <input
-                                  type="email"
-                                  id="form3Example4c"
-                                  class="form-control border-top-0 border-start-0 border-end-0"
-                                  v-model="contact.email"
-                                />
-                                <span
-                                  class="erroe-feedbak"
-                                  v-if="v$.contact.email.$error"
-                                  >{{
-                                    v$.contact.email.$errors[0].$message
-                                  }}</span
-                                >
-                              </div>
-                            </div>
-                            <!--  الموضوع -->
-                            <div
-                              class="d-flex flex-row align-items-center mb-4"
-                            >
-                              <div class="form-outline flex-fill mb-0">
-                                <label class="form-label" for="form4Example1c"
-                                  >الموضوع</label
-                                >
+                                <FontAwesome icon="user" class="icon" />
+
                                 <input
                                   type="text"
-                                  id="form4Example1c"
-                                  class="form-control border-top-0 border-start-0 border-end-0"
-                                  v-model="contact.subject"
+                                  placeholder="الاسم الاول"
+                                  class="form-control"
+                                  v-model="contact.name"
                                 />
                                 <span
                                   class="erroe-feedbak"
-                                  v-if="v$.contact.subject.$error"
+                                  v-if="v$.contact.name.$error"
                                   >{{
-                                    v$.contact.subject.$errors[0].$message
+                                    v$.contact.name.$errors[0].$message
                                   }}</span
                                 >
                               </div>
                             </div>
-                            <!-- الرسالة -->
-                            <div
-                              class="d-flex flex-row align-items-center mb-4"
-                            >
-                              <div class="form-outline" style="width: 100%">
-                                <label class="form-label" for="textAreaExample"
-                                  >الرسالة</label
-                                >
-                                <textarea
+                          </div>
+                          <div class="col-md-12">
+                            <!--  الاسم الثانس -->
+                            <div class="d-flex flex-row align-items-center">
+                              <div class="form-outline flex-fill mb-0">
+                                <FontAwesome icon="user" class="icon" />
+                                <input
+                                  type="text"
+                                  placeholder="الاسم الاخير"
                                   class="form-control"
-                                  id="textAreaExample1"
-                                  rows="4"
-                                  v-model="contact.message"
-                                ></textarea>
+                                  v-model="contact.name"
+                                />
                                 <span
                                   class="erroe-feedbak"
-                                  v-if="v$.contact.message.$error"
+                                  v-if="v$.contact.name.$error"
                                   >{{
-                                    v$.contact.message.$errors[0].$message
+                                    v$.contact.name.$errors[0].$message
                                   }}</span
                                 >
                               </div>
                             </div>
-                            <!-- ارسال -->
-                            <div class="text-start mb-3 mt-4 mb-lg-4">
-                              <button
-                                style="background-color: #f48928; border: none"
-                                @click="contactus()"
-                                type="button"
-                                class="btn btn-primary btn-lg text-end"
-                              >
-                                ارسال
-                              </button>
+                          </div>
+                          <div class="col-md-12">
+                            <!-- رقم الهاتف -->
+                            <div class="d-flex flex-row align-items-center">
+                              <div class="form-outline flex-fill mb-0">
+                                <FontAwesome icon="phone" class="icon" />
+                                <input
+                                  type="number"
+                                  placeholder="رقم الهاتف"
+                                  class="form-control"
+                                  v-model="contact.number"
+                                />
+                                <span
+                                  class="erroe-feedbak"
+                                  v-if="v$.contact.number.$error"
+                                  >{{
+                                    v$.contact.number.$errors[0].$message
+                                  }}</span
+                                >
+                              </div>
                             </div>
-                          </form>
+                          </div>
                         </div>
-                        <div
-                          class="col-md-10 col-lg-6 col-xl-6 d-flex align-items-center order-1 order-lg-2"
+                        <!-- البريد الالكتروني -->
+                        <div class="d-flex flex-row align-items-center">
+                          <div class="form-outline flex-fill mb-0">
+                            <FontAwesome icon="envelope" class="icon" />
+                            <input
+                              type="email"
+                              placeholder="البريد الالكتروني"
+                              class="form-control"
+                              v-model="contact.email"
+                            />
+                            <span
+                              class="erroe-feedbak"
+                              v-if="v$.contact.email.$error"
+                              >{{ v$.contact.email.$errors[0].$message }}</span
+                            >
+                          </div>
+                        </div>
+                        <!--  انضم ك -->
+                        <div class="d-flex flex-row align-items-center my-4">
+                          <div class="form-outline flex-fill mb-0">
+                            <select
+                              class="form-select"
+                              aria-label="Default select example"
+                            >
+                              <option>انضم ك</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                            </select>
+                          </div>
+                        </div>
+                        <!-- ارسال -->
+                        <button
+                          style="
+                            background-color: #f48928;
+                            border: none;
+                            width: 100%;
+                          "
+                          @click="contactus()"
+                          type="button"
+                          class="btn btn-primary btn-lg text-center fs-14 rounded-5"
                         >
-                          <img
-                            src="@/assets/new_img/webp/contact_us.webp"
-                            class="img-fluid"
-                            height="400"
-                            alt="Sample"
-                          />
-                        </div>
-                      </div>
+                          ارسال
+                        </button>
+                      </form>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </section>
-        </div>
+          </div>
+        </section>
       </div>
     </div>
   </div>
@@ -485,7 +431,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -497,5 +443,40 @@ input[type="number"] {
 .home {
   direction: rtl;
   color: #1f1e1e !important;
+}
+.form-control[data-v-570605e2],
+.form-select[data-v-570605e2] {
+  border-radius: 20px !important;
+  padding: 7px 30px !important;
+  background-color: #ffffff42 !important;
+  border: 0 !important;
+}
+.form-select:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #ffffff !important;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem #ffffff42 !important;
+}
+.form-control,
+.form-select {
+  border-radius: 20px;
+}
+.form-control:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #ffffff42 !important;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem #ffffff42 !important;
+}
+::placeholder {
+  color: #ffffff42 !important;
+  font-size: 14px;
+}
+.icon {
+  position: relative !important;
+  top: 32px !important;
+  right: 10px !important;
+  color: #ffffff !important;
 }
 </style>

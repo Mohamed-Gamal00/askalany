@@ -12,132 +12,135 @@
               <div class="container py-5">
                 <div class="row g-5">
                   <!--Growth-->
-                  <div class="col-md-6 col-lg-3 text-center">
+                  <div class="col-md-6 col-lg-4 text-center p-0">
                     <span class="">
                       <img
-                        src="@/assets/new_img/white.png"
+                        src="@/assets/askalany/logo.jpg"
                         style="position: relative; bottom: 30px"
                         width="100"
                         alt="img"
                       />
                     </span>
                     <p class="text-black">
-                      مؤسسة نمو التقنية رائدين في مجال التقنيات الحديثة والتسويق
-                      الإلكتروني لتقديم المزيد من فرص زيادة الأرباح في ظل التطور
-                      التكنولوجي نقدم دعم الأنشطة التجارية المتنوعة
+                      فريق كامل من أفضل الأطباء وفي كل المجالات التي تخدم مجال
+                      طب جراحة الفم والأسنان, متخصصون في زراعة الأسنان, التقويم,
+                      تجميل الأسنان.
                     </p>
                     <div class="d-flex justify-content-center pt-2">
                       <a
                         class="btnn btn-outline-light btn-social"
                         target="_blank"
                         aria-label="facebook"
-                        href="https://www.facebook.com/SIGMA.BSolutions?mibextid=LQQJ4d"
+                        href="#"
                         ><FontAwesome :icon="['fab', 'facebook']"
                       /></a>
                       <a
                         class="btnn btn-outline-light btn-social"
                         target="_blank"
                         aria-label="Twitter"
-                        href="https://twitter.com/sigma_bsolution?s=21&t=40ETF1X4eEMpXw52d1mfaw"
+                        href="#"
                         ><FontAwesome :icon="['fab', 'twitter']"
                       /></a>
                       <a
                         class="btnn btn-outline-light btn-social"
                         target="_blank"
                         aria-label="instagram"
-                        href="https://instagram.com/sigma.bsolutions?igshid=Zjc2ZTc4Nzk="
+                        href="#"
                         ><FontAwesome :icon="['fab', 'instagram']"
                       /></a>
                       <a
                         class="btnn btn-outline-light btn-social"
                         target="_blank"
                         aria-label="linkedin"
-                        href="https://www.linkedin.com/company/sigma-business/"
-                        ><FontAwesome :icon="['fab', 'linkedin']"
+                        href="#"
+                        ><FontAwesome :icon="['fab', 'youtube']"
                       /></a>
                     </div>
                   </div>
                   <!-- الشركة -->
                   <div class="col-md-6 col-lg-3">
-                    <h5 class="text-black text-center mb-4">الشركة</h5>
+                    <h5 class="text-black text-center mb-4">اقسام الموقع</h5>
                     <router-link
                       class="btn_btn_link text-decoration-none"
                       :to="{ name: 'home' }"
                       >الرئيسية</router-link
                     >
                     <router-link
-                      class="btn_btn_link text-decoration-none"
-                      :to="{ name: 'services' }"
-                      >اعمالنا</router-link
+                      class="btn_btn_link text-decoration-none my-3"
+                      :to="{ name: 'about' }"
+                      >من نحن</router-link
                     >
                     <router-link
-                      class="btn_btn_link text-decoration-none"
+                      class="btn_btn_link text-decoration-none my-3"
                       :to="{ name: 'services' }"
-                      >منتجاتنا</router-link
+                      >الخدمات</router-link
                     >
                     <router-link
-                      class="btn_btn_link text-decoration-none"
+                      class="btn_btn_link text-decoration-none my-3"
+                      :to="{ name: 'join' }"
+                      >انضم الينا</router-link
+                    >
+                    <router-link
+                      class="btn_btn_link text-decoration-none my-3"
                       :to="{ name: 'articles' }"
                       >المدونة</router-link
                     >
                   </div>
                   <!-- العمل -->
-                  <div class="col-md-6 col-lg-3">
-                    <h5 class="text-black text-center mb-4">العمل</h5>
-                    <router-link
-                      class="btn_btn_link text-decoration-none"
-                      :to="{ name: 'services' }"
-                    >
-                      تصميم تطبيقات الهاتف
-                    </router-link>
-                    <router-link
-                      class="btn_btn_link text-decoration-none"
-                      :to="{ name: 'services' }"
-                      >تصميم مواقع</router-link
-                    >
-                    <router-link
-                      class="btn_btn_link text-decoration-none"
-                      :to="{ name: 'services' }"
-                      >تسويق الكتروني</router-link
-                    >
-
-                    <router-link
-                      class="btn_btn_link text-decoration-none"
-                      :to="{ name: 'services' }"
-                      >موشن جرافيك</router-link
-                    >
-                  </div>
-                  <!-- المزيد -->
-                  <div class="col-md-6 text-center col-lg-3">
-                    <h5 class="text-black text-center mb-4">المزيد</h5>
-                    <p class="text-black">سياسة الخصوصية</p>
-                    <p class="text-black">الشروط والاحكام</p>
-                    <router-link
-                      class="btn_btn_link text-decoration-none"
-                      :to="{ name: 'about' }"
-                    >
-                      تواصل معنا
-                    </router-link>
-                    <router-link
-                      class="btn_btn_link text-decoration-none"
-                      :to="{ name: 'about' }"
-                    >
-                      من نحن
-                    </router-link>
+                  <div class="col-md-6 col-lg-5">
+                    <h5 class="text-black text-center mb-4">تواصل معنا</h5>
+                    <div>
+                      <div class="card rounded-5" style="width: 100%">
+                        <div class="card-body text-black">
+                          <h5 class="card-title fs-16 fw-bold">
+                            <FontAwesome
+                              class="ms-2 bg-orange"
+                              icon="location-dot"
+                            />العنوان
+                          </h5>
+                          <p class="card-text fs-14 p-0">
+                            المنصورة - بجوار مصرللطيران - خلف بنك الإسكان و
+                            التعمير
+                          </p>
+                          <h5 class="card-title fs-16 fw-bold">
+                            <FontAwesome class="ms-2 bg-orange" icon="phone" />
+                            الهاتف
+                          </h5>
+                          <p class="card-text fs-14">
+                            01030722206 - 0502337738 - 0502333738
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card rounded-5 mt-2" style="width: 100%">
+                      <div class="card-body text-black">
+                        <h5 class="card-title fs-16 fw-bold">
+                          <FontAwesome
+                            class="ms-2 bg-orange"
+                            icon="location-dot"
+                          />العنوان
+                        </h5>
+                        <p class="card-text fs-14 p-0">
+                          منية النصر - مقابل المستشفي العام - خلف المطافي
+                        </p>
+                        <h5 class="card-title fs-16 fw-bold">
+                          <FontAwesome class="ms-2 bg-orange" icon="phone" />
+                          الهاتف
+                        </h5>
+                        <p class="card-text fs-14">01006789317 - 0503584161</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
               <div class="container">
                 <div class="row">
                   <div class="col-md-12 text-black text-center mb-3 mb-md-0">
-                    All Right Reserved.
-
-                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                    Designed By &copy;
+                    All Right Reserved. Designed By &copy;
                     <a
                       class="border-bottom text-decoration-none"
-                      style="color: #ef4823 !important"
-                      >GROWTH</a
+                      style="color: #f48928 !important"
+                      >SIGMA</a
                     >
                   </div>
                 </div>
@@ -174,7 +177,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #ef4823;
+  background-color: #f48928;
   color: var(--light);
   border: 1px solid rgba(256, 256, 256, 0.1);
   transition: 0.3s;

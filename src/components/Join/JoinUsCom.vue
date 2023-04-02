@@ -1,9 +1,19 @@
 <template>
   <NavBarCom />
+  <div class="container-fluid">
+    <div
+      class="row d-flex justify-content-center text-center my-4 py-5"
+      style="background-color: #0c4da2"
+    >
+      <p class="fs-20 fw-bold text-orange">انضم الينا</p>
+      <h3 class="fs-30 text-white" style="font-weight: 500">
+        انضم لفريق عمل مركز العسقلاني لطب الفم والأسنان
+      </h3>
+    </div>
+  </div>
   <!-- تواصل معنا -->
   <div class="container-fluid mt-5">
-    <!-- تواصل معنا -->
-    <div class="row d-flex justify-content-center" id="contact_us">
+    <div class="row d-flex justify-content-center">
       <div class="col-md-10">
         <div class="row">
           <section class="mt-5">
@@ -181,22 +191,6 @@ export default {
   data() {
     return {
       loading: false,
-      cards: [
-        {
-          title: "جودة وكفاة من فريق الأطباء للوصول الي اعلى درجات الرضى.",
-          icon: "circle-check",
-        },
-        {
-          title:
-            "فريق كامل من الأطباء والممرضين للوصول بالخدمة الي اعلى مستوى.",
-          icon: "users",
-        },
-        {
-          title: "اطباء علي اعلى مستوى من الكفاءه.",
-          icon: "chart-simple",
-        },
-      ],
-      isOpen: false,
       v$: useValidate(),
       contact: {
         name: "",

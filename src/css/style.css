@@ -12,11 +12,17 @@
 .text-orange {
   color: #f79828 !important;
 }
+.bg-orange {
+  color: #f79828 !important;
+}
 .fs-10 {
   font-size: 10px !important;
 }
 .fs-14 {
   font-size: 14px !important;
+}
+.fs-16 {
+  font-size: 16px !important;
 }
 .fs-18 {
   font-size: 18px !important;
