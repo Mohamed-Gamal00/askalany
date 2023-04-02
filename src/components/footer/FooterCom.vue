@@ -1,7 +1,7 @@
 <template>
   <div
     class="container-fluid mt-5"
-    style="background-color: #1f1e1e; direction: rtl"
+    style="background-color: #ffffff; direction: rtl"
   >
     <div class="row d-flex justify-content-center">
       <div class="col-md-9">
@@ -21,7 +21,7 @@
                         alt="img"
                       />
                     </span>
-                    <p>
+                    <p class="text-black">
                       مؤسسة نمو التقنية رائدين في مجال التقنيات الحديثة والتسويق
                       الإلكتروني لتقديم المزيد من فرص زيادة الأرباح في ظل التطور
                       التكنولوجي نقدم دعم الأنشطة التجارية المتنوعة
@@ -59,7 +59,7 @@
                   </div>
                   <!-- الشركة -->
                   <div class="col-md-6 col-lg-3">
-                    <h5 class="text-white text-center mb-4">الشركة</h5>
+                    <h5 class="text-black text-center mb-4">الشركة</h5>
                     <router-link
                       class="btn_btn_link text-decoration-none"
                       :to="{ name: 'home' }"
@@ -67,12 +67,12 @@
                     >
                     <router-link
                       class="btn_btn_link text-decoration-none"
-                      :to="{ name: 'ourwork' }"
+                      :to="{ name: 'services' }"
                       >اعمالنا</router-link
                     >
                     <router-link
                       class="btn_btn_link text-decoration-none"
-                      :to="{ name: 'products' }"
+                      :to="{ name: 'services' }"
                       >منتجاتنا</router-link
                     >
                     <router-link
@@ -83,35 +83,35 @@
                   </div>
                   <!-- العمل -->
                   <div class="col-md-6 col-lg-3">
-                    <h5 class="text-white text-center mb-4">العمل</h5>
+                    <h5 class="text-black text-center mb-4">العمل</h5>
                     <router-link
                       class="btn_btn_link text-decoration-none"
-                      :to="{ name: 'ourwork' }"
+                      :to="{ name: 'services' }"
                     >
                       تصميم تطبيقات الهاتف
                     </router-link>
                     <router-link
                       class="btn_btn_link text-decoration-none"
-                      :to="{ name: 'ourwork' }"
+                      :to="{ name: 'services' }"
                       >تصميم مواقع</router-link
                     >
                     <router-link
                       class="btn_btn_link text-decoration-none"
-                      :to="{ name: 'ourwork' }"
+                      :to="{ name: 'services' }"
                       >تسويق الكتروني</router-link
                     >
 
                     <router-link
                       class="btn_btn_link text-decoration-none"
-                      :to="{ name: 'ourwork' }"
+                      :to="{ name: 'services' }"
                       >موشن جرافيك</router-link
                     >
                   </div>
                   <!-- المزيد -->
                   <div class="col-md-6 text-center col-lg-3">
-                    <h5 class="text-white text-center mb-4">المزيد</h5>
-                    <p>سياسة الخصوصية</p>
-                    <p>الشروط والاحكام</p>
+                    <h5 class="text-black text-center mb-4">المزيد</h5>
+                    <p class="text-black">سياسة الخصوصية</p>
+                    <p class="text-black">الشروط والاحكام</p>
                     <router-link
                       class="btn_btn_link text-decoration-none"
                       :to="{ name: 'about' }"
@@ -129,7 +129,7 @@
               </div>
               <div class="container">
                 <div class="row">
-                  <div class="col-md-12 text-center mb-3 mb-md-0">
+                  <div class="col-md-12 text-black text-center mb-3 mb-md-0">
                     All Right Reserved.
 
                     <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
@@ -159,7 +159,7 @@ export default {
 
 <style scoped>
 a {
-  color: white !important;
+  color: rgb(0, 0, 0) !important;
 }
 :root {
   --primary: #2380be;
@@ -192,7 +192,7 @@ a {
   color: var(--light);
   font-weight: normal;
   transition: 0.3s;
-  color: white;
+  color: black;
 }
 .btn_btn_link:hover {
   letter-spacing: 0.5px;

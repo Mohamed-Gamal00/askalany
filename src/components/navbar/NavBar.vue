@@ -33,11 +33,11 @@
               ><span class="fw-bold">الرئيسة</span></router-link
             >
 
-            <router-link class="m-2 ms-lg-4 me-lg-4" :to="{ name: 'ourwork' }"
+            <router-link class="m-2 ms-lg-4 me-lg-4" :to="{ name: 'join' }"
               ><span class="fw-bold">انضم الينا</span></router-link
             >
 
-            <router-link class="m-2 ms-lg-4 me-lg-4" to="/products"
+            <router-link class="m-2 ms-lg-4 me-lg-4" to="/services"
               ><span class="fw-bold">الخدمات</span></router-link
             >
             <router-link class="m-2 ms-lg-4 me-lg-4" to="/articles"

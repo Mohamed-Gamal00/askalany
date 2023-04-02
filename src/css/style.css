@@ -9,6 +9,9 @@
 .erroe-feedbak {
     color:red
 }
+.text-orange {
+  color: #f79828 !important;
+}
 .fs-10 {
   font-size: 10px !important;
 }

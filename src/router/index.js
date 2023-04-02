@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import ArticlesView from "../views/ArticlesView.vue";
 import ArticlepostView from "../views/ArticlepostView.vue";
-import OurAppsView from "../views/OurAppsView.vue";
+import JoinUsView from "../views/JoinUsView.vue";
 import ProductsView from "../views/ProductsView.vue";
 import ServicesView from "../views/ServicesView.vue";
 import ErrorView from "../views/ErrorView.vue";
@@ -34,9 +34,9 @@ const routes = [
     component: ArticlepostView,
   },
   {
-    path: "/ourworks",
-    name: "ourwork",
-    component: OurAppsView,
+    path: "/join",
+    name: "join",
+    component: JoinUsView,
   },
   {
     path: "/products",
