@@ -1,6 +1,16 @@
 <template>
-  <!-- hassan -->
   <NavBarCom />
+  <div class="container-fluid">
+    <div
+      class="row d-flex justify-content-center text-center my-4 py-5"
+      style="background-color: #0c4da2"
+    >
+      <p class="fs-20 fw-bold text-orange">المقالات</p>
+      <h3 class="fs-30 text-white" style="font-weight: 500">
+        مركز العسقلاني المتخصص في طب الفم والأسنان
+      </h3>
+    </div>
+  </div>
   <div class="articles">
     <div v-if="loading">
       <div>
@@ -8,61 +18,72 @@
       </div>
     </div>
     <!-- اخر الاخبار -->
-    <div class="container pt-lg-5">
-      <!-- text -->
-      <div class="row d-flex justify-content-center">
-        <div class="col-md-10" style="position: relative">
-          <!-- <h2 class="background">Strikethrough title</h2> -->
-          <h1
-            class="text-end text-lg-center background backgroundcenter fw-bold"
-            data-aos="zoom-in"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="1000"
-            data-aos-once="false"
-          >
-            <strong>المدونة</strong>
-          </h1>
-          <!-- <p class="fw-bold">
-            هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم
-            في صناعات المطابع ودور النشر. كان لوريم إيبسوم ولايزال المعيار للنص
-            الشكلي منذ القرن الخامس عشر عندما قامت مطبعة مجهولة برص مجموعة من
-            الأحرف بشكل عشوائي أخذتها من نص، لتكوّن كتيّب بمثابة دليل أو مرجع
-            شكلي
-          </p> -->
-        </div>
-      </div>
+    <div class="container-fluid pt-lg-5">
       <div class="row d-flex justify-content-center">
         <div class="col-md-10">
-          <div
-            class="containerr p-lg-3"
-            v-for="article in articles"
-            :key="article"
-          >
-            <router-link
-              class="text-decoration-none"
-              :to="{ name: 'article', params: { id: article.id } }"
-            >
-              <div
-                class="card articles_card"
-                style="width: 100%; color: #1f1e1e"
+          <div class="row">
+            <div class="col-md-4" v-for="article in articles" :key="article">
+              <router-link
+                class="text-decoration-none"
+                :to="{ name: 'article', params: { id: article.id } }"
               >
-                <div class="text-center img_card">
-                  <img :src="article.image" alt="img" />
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title fw-bold">
-                    <strong>{{ article.title }}</strong>
-                  </h5>
-                  <p class="card-text fw-bold">{{ article.date }}</p>
-                  <!-- <router-link to="article/{{ article.id }}">المزيد</router-link> -->
-                  <router-link
-                    :to="{ name: 'article', params: { id: article.id } }"
-                    >عرض المزيد</router-link
+                <div class="card border-0" style="width: 100%">
+                  <div
+                    class="img_card"
+                    style="
+                      height: 300px;
+                      background-color: black;
+                      border-radius: 36px;
+                    "
                   >
-                  <!-- <a href="#" class="btn btn-link fw-bold m-0 p-0">عرض المزيد</a> -->
+                    <img
+                      :src="article.image"
+                      class="card-img-top"
+                      alt="img"
+                      style="
+                        height: 100%;
+                        border-radius: 36px;
+                        object-fit: cover;
+                      "
+                    />
+                  </div>
+                  <div
+                    class="card-body text-center shadow"
+                    style="
+                      position: relative;
+                      bottom: 65px;
+                      background-color: white;
+                      border-radius: 36px;
+                      height: 227px;
+                    "
+                  >
+                    <p class="card-text text-orange">
+                      {{ article.date }}
+                      <FontAwesome icon="clock" class="ms-2" />
+                      13/11-2023
+                    </p>
+                    <h5 class="card-title text-black">{{ article.title }}</h5>
+                    <p class="text-black">
+                      هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم
+                      توليد هذا النص من
+                    </p>
+                    <router-link
+                      class="m-2 border-0"
+                      :to="{ name: 'article', params: { id: article.id } }"
+                      exact
+                    >
+                      <span
+                        style="background-color: #0c4da2"
+                        class="btn fw-bold text-light rounded-pill border-2 py-3 px-4"
+                      >
+                        <FontAwesome icon="circle-arrow-left" class="ms-2" />
+                        شاهد المزيد</span
+                      >
+                    </router-link>
+                  </div>
                 </div>
-              </div>
-            </router-link>
+              </router-link>
+            </div>
           </div>
           <br />
         </div>
@@ -134,6 +155,7 @@ export default {
         .catch(() => this.$router.push({ path: "/servererror" }));
       if (result.status == 200) {
         this.articles = result.data.data;
+        console.log(this.articles);
         this.makePagination(result.data.meta);
       }
       this.loading = false;
@@ -153,61 +175,7 @@ export default {
   direction: rtl;
   color: #1f1e1e;
 }
-.articles .articles_card {
-  border: 0px;
-  transition: all 0.3s ease-in-out;
-  transform: scale(0.98);
-}
-.articles .articles_card:hover {
-  border: 0px;
-  box-shadow: 0 3px 6px rgba(0, 138, 184, 0.342),
-    0 3px 6px rgba(0, 138, 184, 0.301);
-  transform: scale(1);
-}
-.articles .containerr {
-  padding: 1em 0;
-  float: right;
-  padding: 2px;
-  margin-top: 5px;
-}
-/* mobile */
-@media screen and (max-width: 640px) {
-  .articles .containerr {
-    width: 100%;
-  }
-  .articles .articles_card {
-    width: 100%;
-    object-fit: cover;
-  }
-  .articles .articles_card img {
-    width: 100%;
-    height: 180px;
-  }
-}
-/* ipad */
-@media screen and (min-width: 768px) {
-  .articles .containerr {
-    width: 48.33333%;
-  }
-  .articles .articles_card img {
-    width: 100%;
-    height: 150px;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  .articles .containerr {
-    width: 33.33333%;
-    height: 410px;
-  }
-  .articles .articles_card .img_card {
-    height: 250px;
-  }
-  .articles .articles_card img {
-    max-width: 100%;
-    height: 250px;
-    padding: 2px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-  }
+.shadow {
+  box-shadow: 0 -0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
 </style>
